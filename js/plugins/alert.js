@@ -1,8 +1,8 @@
-tinymce.PluginManager.add( 'bs_alerts', function( editor, url ) {
-    editor.addButton( 'bs_alerts', {
+tinymce.PluginManager.add( 'bs_alert', function( editor, url ) {
+    editor.addButton( 'bs_alert', {
         type: 'menubutton',
         tooltip: 'Alerts',
-            icon: 'bs-alerts',
+            icon: 'bs-alert',
             menu: [
                  { text: 'Success notification', onclick: function() { editor.insertContent('[bs_notification type="success"]<strong>Well done!</strong>You successfully read <a href="#" class="alert-link">this important alert message</a>.[/bs_notification]');} },
                  { text: 'Info notification',    onclick: function() { editor.insertContent('[bs_notification type="info"]<strong>Heads up!</strong>This <a href="#" class="alert-link">alert needs your attention</a>, but it\'s not super important.[/bs_notification]');} },
